@@ -1,0 +1,20 @@
+﻿<Window x:Class="EFCore.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EFCore"
+        mc:Ignorable="d"
+        Title="Window2" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="dgwindows2" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Mã SP" Binding="{Binding MaSp}" />
+                <DataGridTextColumn Header="Tên SP" Binding="{Binding TenSp}" />
+                <DataGridTextColumn Header="Tên Loại" Binding="{Binding TenLoai}" />
+                <DataGridTextColumn Header="Số Lượng Đã Bán" Binding="{Binding SoLuong}" />
+                <DataGridTextColumn Header="Tổng Tiền" Binding="{Binding ThanhTien}" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
